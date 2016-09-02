@@ -8,7 +8,7 @@ Running lammps
 
 To run the docker container run the command
 
-    nvidia-docker -ti run -v $(pwd):/srv/input -v $HOME/scratch:/srv/scratch malramsay/lammps_gpu
+    nvidia-docker run -ti -v $(pwd):/srv/input -v $HOME/scratch:/srv/scratch malramsay/lammps_gpu
 
 which will bring up a command prompt. Running lammps is relatively simple
 
